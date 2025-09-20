@@ -59,7 +59,7 @@ cmd({
 
 cmd({ 
     pattern: "yta", 
-    alias: ["play", "audio"], 
+    alias: ["play2", "audio"], 
     react: "🎧", 
     desc: "Download YouTube song", 
     category: "main", 
@@ -93,7 +93,7 @@ cmd({
 });
 
 cmd({
-    pattern: "play2",
+    pattern: "play",
     alias: ["yta2", "song"],
     react: "🎵",
     desc: "Download high quality YouTube audio",
@@ -112,7 +112,7 @@ cmd({
         const vid = yt.results[0];
 
         const caption =
-`*YT AUDIO DOWNLOADER*
+`*NEBULA MD AUDIO DOWNLOADER*
 ╭━━❐━⪼
 ┇๏ *Title*    –  ${vid.title}
 ┇๏ *Duration* –  ${vid.timestamp}
@@ -128,7 +128,7 @@ cmd({
         }, { quoted: mek });
 
         // Step 3: Fetch audio URL
-        const apiUrl = `https://api-aswin-sparky.koyeb.app/api/downloader/song?search=${encodeURIComponent(vid.url)}`;
+        const apiUrl = `https://api.nekolabs.my.id/downloader/youtube/v3?url=${encodeURIComponent(vid.url)}`;
         const response = await fetch(apiUrl);
         const data = await response.json();
 
