@@ -10,7 +10,7 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
- SESSION_ID: process.env.SESSION_ID || "Nebula~ZWsR1ALb#eftzsMuxqdYEoFvPy_ln8BpPpLcOeu59z9JEoUWJxrc",
+ SESSION_ID: process.env.SESSION_ID || "Nebula~paMyzIDD#rGRyNFF0OWgHOMLr-jQDNtWWcgKWIqpYdcd4E7kSqUE",
   PREFIX: getConfig("PREFIX") || ".",
     CHATBOT: getConfig("CHATBOT") || "on", 
     BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "NEBULA-MD",
