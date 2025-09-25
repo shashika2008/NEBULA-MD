@@ -2,7 +2,7 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
-<a><img src='https://i.ibb.co/LDbPq08m/20250925-215638.png'/></a>
+<a><img src='https://i.ibb.co/3YPxH8gT/file-00000000e89461f7ac47442cb1bd85f4.png'/></a>
 
 <!-- ⚡ TYPING EFFECT -->
 <p align="center">
