@@ -1,0 +1,25 @@
+{
+  "bot-name": "NEBULA-MD",
+  "description": "NEBULA-MD made for people on Earth By Ridz Coder",
+  "logo": "https://i.ibb.co/T5Dn1HM/20250919-224319.png",
+  "keywords": ["bot"],
+  "documentation-link": "https://session.talkdrove.com",
+  "owner-verification": "smtechofcmods@gmail.com",
+  "env": {
+    "SESSION_ID": {
+      "description": "Put session id",
+      "value": "",
+      "required": true
+    },
+    "PREFIX": {
+      "description": "Bot command prefix, (e.g, . , ! @ etc",
+      "value": ".",
+      "required": true  
+    },
+    "PREMIUM_USERS": {
+      "description": "premium users",
+      "value": "923072380**",
+      "required": false
+    }
+  }
+}
