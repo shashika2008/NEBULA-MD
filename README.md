@@ -13,33 +13,27 @@
 
 ---
 
-## 📦 Deployment Methods
-<table align="center">
-<a href="https://bot-hosting.net/?aff=1367880529210507356">
-<img src="https://img.shields.io/badge/Bot%20Hosting-Deploy-blue?style=for-the-badge&logo=netlify&logoColor=white">
-</a>
-<b>
-<a href="https://dashboard.katabump.com/auth/login#40f6a8">
-<img src="https://img.shields.io/badge/Katabump-One%20Click%20Deploy-blueviolet?style=for-the-badge&logo=cloudflare&logoColor=white">
-<a href="https://railway.app">
-<img src="https://img.shields.io/badge/Railway-Deploy-0b0d0e?style=for-the-badge&logo=railway&logoColor=white">
-</a>
+## 📡 DEPLOYMENT SITES
 
-<a href="https://pterodactyl.io">
-<img src="https://img.shields.io/badge/Pterodactyl-Deploy-FF5733?style=for-the-badge&logo=server&logoColor=white">
-</a>
-<a href="https://dashboard.heroku.com/new?template=https://github.com/ridz-coder/NEBULA-MD/tree/main">
-<img src="https://img.shields.io/badge/Heroku-Deploy%20Now-430098?style=for-the-badge&logo=heroku&logoColor=white">
-</a>
+<p align="center">Deploy your <strong>NEBULA-MD</strong> with one click on your favorite hosting platforms.</p>
 
-<a href="https://render.com/deploy?repo=https://github.com/ridz-coder01/NEBULA-MD">
-<img src="https://img.shields.io/badge/Render-Deploy-0466C8?style=for-the-badge&logo=render&logoColor=white">
-</a>
 
-<a href="https://replit.com/github/ridz-coder01/NEBULA-MD">
-<img src="https://img.shields.io/badge/Replit-Deploy-F26207?style=for-the-badge&logo=replit&logoColor=white">
-</a>
-</table>
+<div align="center">
+  <table>
+    <tr>
+      <td><a href="https://dashboard.heroku.com/new?template=https://github.com/ridz-coder01/NEBULA-MD" target="_blank"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000000&color=00ffff"/></a></td>
+      <td><a href="https://talkdrove.com" target="_blank"><img src="https://img.shields.io/badge/TalkDrove-6971FF?style=for-the-badge&logo=github&logoColor=white&labelColor=000000"/></a></td>
+    </tr>
+    <tr>
+      <td><a href="https://app.koyeb.com/services/deploy?type=git&repository=ridz-coder01/NEBULA-MD" target="_blank"><img src="https://img.shields.io/badge/Koyeb-FF009D?style=for-the-badge&logo=koyeb&logoColor=white&labelColor=000000"/></a></td>
+      <td><a href="https://railway.app/new" target="_blank"><img src="https://img.shields.io/badge/Railway-FF8700?style=for-the-badge&logo=railway&logoColor=white&labelColor=000000"/></a></td>
+    </tr>
+    <tr>
+      <td><a href="https://dashboard.render.com/web/new" target="_blank"><img src="https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white&labelColor=000000&color=00ffaa"/></a></td>
+      <td><a href="https://app.netlify.com/" target="_blank"><img src="https://img.shields.io/badge/Netlify-CC00FF?style=for-the-badge&logo=huggingface&logoColor=white&labelColor=000000"/></a></td>
+    </tr>
+  </table>
+</div>
 
 ---
 
