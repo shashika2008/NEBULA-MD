@@ -6,7 +6,7 @@ const axios = require('axios');
 cmd({
   pattern: "quran",
   alias: ["surah"],
-  react: "🤍",
+  react: "🍨",
   desc: "Get Quran Surah details and explanation.",
   category: "main",
   filename: __filename
@@ -242,7 +242,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://i.ibb.co/T5Dn1HM/20250919-224319.png` },
+                image: { url: `https://files.catbox.moe/5cibfm.png` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
