@@ -42,15 +42,22 @@ cmd({
     let translatedTafsirUrdu = await translate(json.data.tafsir.id, { to: 'ur', autoCorrect: true });
     let translatedTafsirEnglish = await translate(json.data.tafsir.id, { to: 'en', autoCorrect: true });
 
-    let quranSurah = `
-🕋 *Quran: The Holy Book ♥️🌹قرآن مجید🌹♥️*\n
-📖 *Surah ${json.data.number}: ${json.data.asma.ar.long} (${json.data.asma.en.long})*\n
-💫Type: ${json.data.type.en}\n
-✅Number of verses: ${json.data.ayahCount}\n
-⚡🔮 *Explanation (Urdu):*\n
-${translatedTafsirUrdu.text}\n
-⚡🔮 *Explanation (English):*\n
-${translatedTafsirEnglish.text}`;
+   let quranSurah = `
+╭───『 *QURAN: THE HOLY BOOK* 』───❏
+│
+├─❏ *📖 SURAH INFO*
+│  ├─∘ *Number:* ${json.data.number}
+│  ├─∘ *Arabic:* ${json.data.asma.ar.long}
+│  ├─∘ *English:* ${json.data.asma.en.long}
+│  ├─∘ *Type:* ${json.data.type.en}
+│  └─∘ *Verses:* ${json.data.ayahCount}
+│
+├─❏ *🔮 EXPLANATION (URDU)*
+│  └─∘ ${translatedTafsirUrdu.text}
+│
+├─❏ *🔮 EXPLANATION (ENGLISH)*
+│  └─∘ ${translatedTafsirEnglish.text}
+╰───❏`.trim();
 
     await conn.sendMessage(
       from,
