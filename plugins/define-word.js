@@ -10,7 +10,7 @@ cmd({
 },
 async (conn, mek, m, { from, q, reply }) => {
     try {
-        if (!q) return reply("Please provide a word to define.\n\n📌 *Usage:* .define [word]");
+        if (!q) return reply("❌ Please provide a word to define.\n\n📌 *Usage:* .define [word]");
 
         const word = q.trim();
         const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
@@ -20,24 +20,33 @@ async (conn, mek, m, { from, q, reply }) => {
 
         const definition = definitionData.meanings[0].definitions[0].definition;
         const example = definitionData.meanings[0].definitions[0].example || '❌ No example available';
-        const synonyms = definitionData.meanings[0].definitions[0].synonyms.join(', ') || '❌ No synonyms available';
+        const synonyms = definitionData.meanings[0].definitions[0].synonyms?.join(', ') || '❌ No synonyms available';
         const phonetics = definitionData.phonetics[0]?.text || '🔇 No phonetics available';
         const audio = definitionData.phonetics[0]?.audio || null;
 
+        // Optional: current time
+        const time = new Date().toLocaleString("en-GB", { timeZone: "Africa/Kampala" });
+
         const wordInfo = `
-📖 *Word*: *${definitionData.word}*  
-🗣️ *Pronunciation*: _${phonetics}_  
-📚 *Definition*: ${definition}  
-✍️ *Example*: ${example}  
-📝 *Synonyms*: ${synonyms}  
+╭─────❏ *📖 𝙉𝙀𝘽𝙐𝙇𝘼 𝙈𝘿* ❏─────╮
+│ 🕒 *Time*: ${time}
+│ 🔤 *Word*: ${definitionData.word}
+│ 🗣 *Pronunciation*: ${phonetics}
+│
+│ 📚 *Definition*: ${definition}
+│ ✍️ *Example*: ${example}
+│ 📝 *Synonyms*: ${synonyms}
+╰───────────────────────────────╯
+🔗 _ᴘᴏᴡᴇʀᴇᴅ ʙʏ Rɪᴅᴢ Cᴏᴅᴇʀ_
+        `.trim();
 
-🔗 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ Rɪᴅᴢ Cᴏᴅᴇʀ*`;
-
+        // Send pronunciation audio if available
         if (audio) {
             await conn.sendMessage(from, { audio: { url: audio }, mimetype: 'audio/mpeg' }, { quoted: mek });
         }
 
         return reply(wordInfo);
+
     } catch (e) {
         console.error("❌ Error:", e);
         if (e.response && e.response.status === 404) {
