@@ -114,7 +114,7 @@ cmd({
         });
 
         await conn.sendMessage(from, {
-            image: { url: "https://i.ibb.co/T5Dn1HM/20250919-224319.png" },
+            image: { url: "https://files.catbox.moe/5cibfm.png" },
             caption: listMessage
         }, { quoted: mek });
     } catch (err) {
