@@ -48,7 +48,7 @@ Cʀᴇᴀᴛᴇᴅ ʙʏ Rɪᴅᴢ Cᴏᴅᴇʀ`;
 
         // Send image with truncated source code
         await conn.sendMessage(from, { 
-            image: { url: `https://i.ibb.co/T5Dn1HM/20250919-224319.png` },
+            image: { url: `https://files.catbox.moe/5cibfm.png` },
             caption: formattedCode,
             contextInfo: {
                 mentionedJid: [m.sender],
