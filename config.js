@@ -10,15 +10,15 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
- SESSION_ID: process.env.SESSION_ID || "Nebula~pdkSXQiB#Mm1yejkt0S6tL5winz8DsvEYW-ANvgvFsOupeVC1Als",
+ SESSION_ID: process.env.SESSION_ID || "aJRDhD7D#Io66l6JkyY_nJcR9Fm4-tctM873S7lfA2l5t0gb5aGE",
   PREFIX: getConfig("PREFIX") || ".",
     CHATBOT: getConfig("CHATBOT") || "on", 
-    BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "NEBULA-MD",
+    BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "Agni",
     MODE: getConfig("MODE") || process.env.MODE || "public", 
     REPO: process.env.REPO || "https://github.com/Ridz-coder01/NEBULA-MD", 
     BAILEYS: process.env.BAILEYS || "@whiskeysockets/baileys", 
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "263714732501",
-    OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "Rɪᴅᴢ Cᴏᴅᴇʀ",           // Owner's name
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "94772469026",
+    OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "shashika",           // Owner's name
     DEV: process.env.DEV || "263714732501",                     // Developer's contact number
     DEVELOPER_NUMBER: '263714732501@s.whatsapp.net',            // Developer's WhatsApp ID
 
